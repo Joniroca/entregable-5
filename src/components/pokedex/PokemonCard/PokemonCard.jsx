@@ -1,5 +1,5 @@
 import getPokemonById from "../../../services/getPokemonById";
-import "./pokemonCard.css";
+import "./PokemonCard.css";
 
 import { useEffect, useState } from "react";
 
@@ -37,7 +37,7 @@ const pokemonCard = ({ pokemonId }) => {
               ))}
             </ul>
           </section>
-
+          <hr />
           <section className="pokemon-card__list">
             <ul className="pokemon-card__ul">
               {statsToUse.map((stat) => (

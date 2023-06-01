@@ -1,0 +1,24 @@
+.pokemon-card__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /* Provoca un comportamiento erroneo en la lista de pokemones */
+    /* width: 261px; */
+}
+
+.pokemon-card__listed {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 261px;
+
+    margin: 6px;
+
+}
+
+.link__envolve {
+    text-decoration: none;
+    color: unset;
+}

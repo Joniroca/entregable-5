@@ -1,3 +1,4 @@
+import "./PokemonList.css";
 import { useState } from "react";
 import { usePagination } from "../../../hook/usePagination";
 import PagesComponent from "../PagesComponent/PagesComponent";
@@ -11,7 +12,7 @@ const PokemonList = ({ pokemones }) => {
     pokemonesPerPage
   );
   return (
-    <section>
+    <section className="pokemon-list__main-container">
       <PagesComponent
         totalPages={totalPages}
         onChangePage={changePageTo}
@@ -19,11 +20,14 @@ const PokemonList = ({ pokemones }) => {
         onBackPage={() => changePageTo(currentPage - 1)}
       />
 
-      <ul>
+      <ul className="pokemon-card__list">
         {pokemonsSlice.map((pokemon) => (
-          <li key={pokemon.url}>
+          <li className="pokemon-card__listed" key={pokemon.url}>
             {/* <Link to= > */}
-            <Link to={`/pokedex/${pokemon.url.split("/").at(-2)}`}>
+            <Link
+              className="link__envolve"
+              to={`/pokedex/${pokemon.url.split("/").at(-2)}`}
+            >
               <PokemonCard pokemonId={pokemon.url.split("/").at(-2)} />
             </Link>
           </li>
