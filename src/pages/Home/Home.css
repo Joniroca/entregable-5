@@ -1,0 +1,30 @@
+.home__logo-container img {
+    max-width: 100%;
+}
+
+/* .home__logo-container img {
+    width: 100%;
+} */
+
+.home__title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 61px;
+    text-align: center;
+
+    color: rgb(251, 69, 37);
+}
+
+.home__description {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.home__form-container {
+    margin: 15px 0;
+    display: grid;
+    place-content: center;
+}

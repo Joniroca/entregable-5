@@ -1,0 +1,12 @@
+import axiosInstance from "../api/axiosInstance";
+
+const getPokemonByTypeId = async (typeId) => {
+  try {
+    const res = await axiosInstance.get(`type/${typeId}/`);
+    return res.data.pokemon.map((pokemonData) => pokemonData.pokemon);
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+export default getPokemonByTypeId;
