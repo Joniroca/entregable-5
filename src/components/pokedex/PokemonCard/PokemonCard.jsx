@@ -1,5 +1,5 @@
 import getPokemonById from "../../../services/getPokemonById";
-import "./pokemonCard.css";
+import "./PokemonCard.css";
 
 import { useEffect, useState } from "react";
 
