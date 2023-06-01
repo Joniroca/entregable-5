@@ -14,6 +14,8 @@
     /* border-radius: 12px 12px 0px 0px; */
     height: 128px;
 
+    margin-bottom: 56px;
+
 
 }
 
@@ -27,6 +29,50 @@
 .pokemon-card__title {
     display: grid;
     place-content: center;
+
+
+
+
+
+}
+
+.pokemon-card__title h3 {
+    width: 173px;
+    height: 17px;
+
+    display: grid;
+    place-content: center;
+
+    /* border: solid red 1px, */
+
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(229, 45, 45, 1);
+}
+
+.pokemon-card__title ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin: 0 0 26px 0;
+
+    list-style: none;
+}
+
+.hr {
+    border: 0.5px solid rgba(229, 229, 229, 1)
+}
+
+.pokemon-card__title li {
+    margin: 0 6px 0 6px;
+
+    color: rgba(79, 79, 79, 1);
+
 }
 
 .pokemon-card__list {

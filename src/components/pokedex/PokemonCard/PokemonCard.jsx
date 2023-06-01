@@ -37,7 +37,7 @@ const pokemonCard = ({ pokemonId }) => {
               ))}
             </ul>
           </section>
-          <hr />
+          <hr className="hr" />
           <section className="pokemon-card__list">
             <ul className="pokemon-card__ul">
               {statsToUse.map((stat) => (
