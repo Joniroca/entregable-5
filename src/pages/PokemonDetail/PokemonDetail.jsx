@@ -10,6 +10,11 @@ const PokemonDetail = () => {
         Aquie debe de ir información ampliada de el POKEMON con el ID
         {pokemonId}
       </p>
+      <p>
+        Profe! estoy trabajando en esta vista para actualizarlo en la mayor
+        brevedad posible, una disculpa, ando entendiendo toda esta info que esta
+        brutal.
+      </p>
     </div>
   );
 };

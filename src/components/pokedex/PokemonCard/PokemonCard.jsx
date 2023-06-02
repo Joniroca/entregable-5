@@ -41,7 +41,7 @@ const pokemonCard = ({ pokemonId }) => {
           <section className="pokemon-card__list">
             <ul className="pokemon-card__ul">
               {statsToUse.map((stat) => (
-                <li key={stat.name}>
+                <li className="pokemon-card__ul-li" key={stat.name}>
                   <em> {stat.name.toUpperCase()} </em>
                   <span> {stat.value} </span>
                 </li>
