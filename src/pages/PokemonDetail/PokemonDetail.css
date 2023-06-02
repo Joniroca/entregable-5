@@ -46,12 +46,20 @@
 }
 
 .pokemon-data__types-list {
+    background-color: rgba(50, 50, 50, 0.311);
+
     font-size: 23px;
-    color: rgba(79, 79, 79, 1);
+    color: rgb(48, 48, 48);
+
+    border-radius: 12px;
+
+    padding: 6px;
 }
 
 .pokemon-data__types-list li {
     list-style: none;
+
+    text-shadow: 1px 1px 3px red;
 }
 
 .pokemon-data__stats-list {
