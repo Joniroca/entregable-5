@@ -11,13 +11,13 @@ const PagesComponent = ({
   const pagesArray = new Array(totalPages).fill().map((_, i) => i++);
   return (
     <div>
-      <button onClick={() => onBackPage(currentPage - 1)}>BACK</button>
+      <button onClick={() => onBackPage()}>BACK</button>
       {pagesArray.map((pageFromArray) => (
         <button key={pageFromArray} onClick={() => onChangePage(pageFromArray)}>
           {pageFromArray}
         </button>
       ))}
-      <button onClick={() => onNextPage(currentPage + 1)}>BACK</button>
+      <button onClick={() => onNextPage()}>NEXT</button>
     </div>
   );
 };
