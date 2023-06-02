@@ -41,30 +41,25 @@ const PokemonDetail = () => {
           {/* <div>
             <img src={pokemonData.image} alt="" />
           </div> */}
-          <h2> {pokemonData.name} </h2>
-          <section>
-            <ul>
-              {pokemonData.types.map((type) => (
-                <li key={type}>{type}</li>
-              ))}
-            </ul>
-            <ul>
-              {pokemonData.stats.map((stat) => (
-                <li key={stat.name + stat.value}>
-                  {stat.name}: {stat.value}
-                </li>
-              ))}
-            </ul>
+          <section className="pokemon-data__main-container">
+            <h2 className="pokemon-data__title"> {pokemonData.name} </h2>
+            <section className="pokemon-data__types-list">
+              <ul>
+                {pokemonData.types.map((type) => (
+                  <li key={type}>{type}</li>
+                ))}
+              </ul>
+            </section>
+            <section className="pokemon-data__stats-list">
+              <ul>
+                {pokemonData.stats.map((stat) => (
+                  <li key={stat.name + stat.value}>
+                    {stat.name}: {stat.value}
+                  </li>
+                ))}
+              </ul>
+            </section>
           </section>
-          <p>
-            Aquie debe de ir información ampliada de el POKEMON con el ID
-            {pokemonId}
-          </p>
-          <p>
-            Profe! estoy trabajando en esta vista para actualizarlo en la mayor
-            brevedad posible, una disculpa, ando entendiendo toda esta info que
-            esta brutal.
-          </p>
         </article>
       )}
     </div>

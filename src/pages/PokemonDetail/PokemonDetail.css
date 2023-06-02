@@ -1,3 +1,12 @@
+.article {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    min-height: 100vh;
+    /* min-width: 100%; */
+}
+
 .pokemon-detail__main-container {
     width: 100vw;
 }
@@ -8,4 +17,28 @@
 
 .pokemon-detail__logo-container img {
     width: 100%;
+}
+
+.pokemon-data__main-container {
+    /* display: flex; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    /* height: 12%; */
+}
+
+.pokemon-data__title {
+    color: red;
+    text-shadow: 1px 1px 3px black;
+
+    display: grid;
+    place-content: center;
+
+    font-size: 33px;
+    background: linear-gradient(179.75deg, #e62d2d39 -19.96%, #d13e3e4f 43.67%, #f07f7f4f 138.4%);
+    width: 100%;
+
+    margin: 3% 0;
+
 }
