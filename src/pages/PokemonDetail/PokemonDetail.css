@@ -1,0 +1,11 @@
+.pokemon-detail__main-container {
+    width: 100vw;
+}
+
+.pokemon-detail__logo-container {
+    width: 100%;
+}
+
+.pokemon-detail__logo-container img {
+    width: 100%;
+}
