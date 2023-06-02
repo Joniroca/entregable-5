@@ -29,10 +29,7 @@ const PokemonDetail = () => {
       ) : (
         <>
           <div>
-            <img
-              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
-              alt=""
-            />
+            <img src={pokemonData.image} alt="" />
           </div>
           <h2> {pokemonData.name} </h2>
           <ul>

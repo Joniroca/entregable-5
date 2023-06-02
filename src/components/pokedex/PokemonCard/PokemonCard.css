@@ -37,8 +37,11 @@
 }
 
 .pokemon-card__title h3 {
-    width: 173px;
-    height: 17px;
+    /* width: 173px; */
+    /* height: 17px; */
+
+    overflow-wrap: normal;
+    overflow: hidden;
 
     display: grid;
     place-content: center;
