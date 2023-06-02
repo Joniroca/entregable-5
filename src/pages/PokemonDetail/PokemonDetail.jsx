@@ -51,10 +51,13 @@ const PokemonDetail = () => {
               </ul>
             </section>
             <section className="pokemon-data__stats-list">
-              <ul>
+              <ul className="pokemon-data__stats-list__ul">
                 {pokemonData.stats.map((stat) => (
-                  <li key={stat.name + stat.value}>
-                    {stat.name}: {stat.value}
+                  <li
+                    className="pokemon-data__stats-list__ul-li"
+                    key={stat.name + stat.value}
+                  >
+                    <em>{stat.name}:</em> <p>{stat.value}</p>
                   </li>
                 ))}
               </ul>
